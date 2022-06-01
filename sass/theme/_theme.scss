@@ -1,0 +1,316 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap');
+
+
+//from https://www.onlinewebfonts.com/download/30c7b0ba24b3056fd3b4d95abf785da0
+
+/*
+      <div>Font made from <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>is licensed by CC BY 3.0</div>
+      OR
+      <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>
+*/
+@font-face {font-family: "Maax";
+    src: url("../fonts/30c7b0ba24b3056fd3b4d95abf785da0.eot"); /* IE9*/
+    src: url("../fonts//30c7b0ba24b3056fd3b4d95abf785da0.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts//30c7b0ba24b3056fd3b4d95abf785da0.woff2") format("woff2"), /* chrome firefox */
+    url("../fonts//30c7b0ba24b3056fd3b4d95abf785da0.woff") format("woff"), /* chrome firefox */
+    url("../fonts//30c7b0ba24b3056fd3b4d95abf785da0.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("../fonts//30c7b0ba24b3056fd3b4d95abf785da0.svg#Maax") format("svg"); /* iOS 4.1- */
+}
+
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Maax', serif;
+	color: $blue;
+	line-height: 1.1;
+}
+
+.aln-menu-title {
+	font-size: 1.3em;
+	font-family: 'Maax', serif;	
+	line-height: .5;
+	vertical-align: middle;
+}
+
+.leaf-header {
+	height: 35px;
+	width: 35px;
+	margin-right: 10px;
+}
+
+#page {
+	background-color: $tan;
+	//background-image: url(../imgs/leaf-pattern.svg);//probably ditch this or find another leaf pattern
+}
+
+#content {
+	background-color: #fff;
+	padding: 70px 30px;
+}
+
+#wrapper-navbar {
+	background-color: #fff;
+}
+
+#main-nav {
+	background-color: #fff!important;
+	border-bottom: 2px solid $orange;
+	width: 100%;
+}
+
+#main-nav .container {
+	width: 100%;
+}
+
+
+.navbar-expand-md>.container {
+	padding: 0;
+}
+
+#logo {
+	background-image: url(../imgs/symbol.jpg);
+	background-position: left center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 200px;
+	background-size: contain;	
+	margin-top: 20px;
+}
+
+#logo a.navbar-brand {
+	font-size: calc(1.7rem + 2vw);
+    letter-spacing: -.1rem;
+	font-family: 'Maax', serif;
+	line-height: 1;
+	margin: 40px 0 0 230px;
+}
+
+#logo a.navbar-brand:hover{
+	color: $orange;
+}
+
+#main-menu a {
+	color: $primary;
+}
+
+//single course *************************
+#single-course-wrapper h2 {
+	border-bottom: 1px solid $gray;
+	margin-bottom: 10px;
+}
+
+.holder {
+	margin: 20px 0 40px 0;
+}
+
+.uni {
+	background-color: $blue;
+	color: #fff;
+	font-size: 1.1em;
+	padding: 5px 25px 5px 10px;
+	display: inline-block;
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
+	margin: 10px 0 40px 0;
+}
+
+.fee, .hours {
+	font-size: 1.4em;
+}
+
+.link-row {
+	margin-top: 25px;
+}
+
+.course-image {
+	margin: 0 auto 30px auto;
+	display: block;
+}
+
+//dates
+
+.date-holder {
+	margin-top: 35px;
+}
+
+#single-course-wrapper table {
+	margin-top: -8px;
+}
+
+#single-course-wrapper .table thead th {
+	background-color: #efefef;
+}
+
+.date-row h3 {
+	font-size: 1em;
+	margin-top: 15px;
+}
+
+.single-date {
+	border-top: 1px solid #efefef;
+	padding: 5px 0;
+	margin-bottom: 5px;
+}
+
+//modules
+.module-description {
+	margin-top: 30px;
+	font-size: 1.5em;
+}
+
+//course design statements
+
+#design-statement ul {
+	list-style-type: none;
+	padding-left: 15px;
+}
+
+
+//artefact 
+.artefact-row {
+	margin: 5px 0;
+	border-bottom: 1px solid #efefef;
+	padding: 10px 0;
+}
+
+.artefact-link {
+	margin: 0 10px 0 10px;
+	font-weight: 700;
+	text-decoration: underline;
+	text-decoration-color: $orange;
+	width: 300px;
+}
+
+//instructor 
+
+.instructor .row {
+	padding-top: 20px;
+}
+
+.instructor-bio-img {
+	border-radius: 50%;
+	margin: 10px auto;
+	display: block;
+}
+
+.instructor-title {
+	font-size: .9em;
+	font-weight: 200;
+	margin-bottom: 15px;
+}
+
+//acf 
+
+.acf-label label {
+	font-size: 1.1em;
+	font-family: 'Maax', serif;	
+}
+
+.acf-button {
+	padding: 5px 10px;
+	border-radius: 3px;
+	background-color: $primary;
+	color: #fff;
+}
+
+.acf-button:hover {
+	color: $orange;
+	text-decoration: none;
+}
+
+.acf-form-submit input {
+	padding: 10px 20px;
+	border-radius: 3px;
+	background-color: $primary;
+	color: #fff;
+	margin: 10px auto;
+	display: block;
+	font-size: 1.3em;
+}
+
+.acf-field-5ef8d7593da64 img {
+	border-radius: 50%;
+}
+
+//buttons
+.btn, .acf-button, .acf-form-submit input {
+	border-radius: 30px;
+	padding: 12px 25px;
+	border-style: none;
+}
+
+.acf-button {
+	margin: 10px 0;
+	display: inline-block;
+}
+
+//sidebar or widgets
+
+.widget-area input {
+	height: 50px;
+	margin-bottom: 20px;
+}
+
+//footer
+#wrapper-footer {
+	background-color: $blue;
+	padding-top: 80px;
+	margin-top: 50px;
+	color: #fff;
+}
+
+#wrapper-footer h1, #wrapper-footer h2, #wrapper-footer h3 {
+	color: #fff;
+}
+
+#wrapper-footer a, caption {
+	color: #fff;
+}
+
+//image uploader haxxx
+
+.attachments-browser .media-toolbar, .media-sidebar{
+	display: none !important;
+}
+
+
+.media-toolbar-primary {
+	width: 100%;
+}
+
+.media-button-select.button.button-large {
+	width: 100%;
+	font-size: 2em;
+	z-index: 100;
+}
+
+
+//progress bar for word count
+
+// .progress-bar {
+// 	height: 5px;
+// 	transition: all .3s;
+// 	border: 1px solid #efefef;
+// }
+
+@media all and (max-width: 768px) { 
+	.aln-menu-title {
+		font-size: .9em;
+	}
+	#logo {
+		height: 250px;
+		background-position: center center;
+	}
+	#logo a.navbar-brand {
+		font-size: calc(1.5rem + 1vw);	  
+	    margin: 270px auto 0 auto;
+	    float: right;
+	}
+ } 
+
+
