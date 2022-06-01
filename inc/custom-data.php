@@ -417,7 +417,7 @@ function create_program_taxonomies()
   register_taxonomy('programs',array('course'), array(
     'hierarchical' => true,
     'labels' => $labels,
-    'show_ui' => true,
+    'show_ui' => false,
     'update_count_callback' => '_update_post_term_count',
     'query_var' => true,
     'rewrite' => array( 'slug' => 'program' ),

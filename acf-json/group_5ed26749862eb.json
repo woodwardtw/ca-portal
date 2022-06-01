@@ -23,20 +23,21 @@
             "key": "field_5ed26754e352d",
             "label": "Short Course Description",
             "name": "short_course_description",
-            "type": "textarea",
-            "instructions": "Consider including the following: \r\n-a link to the course outline\r\n-pre-requirements link\r\n-details about professional development credit\r\n\r\nPlease limit your entry to <span id=\"short-desc-limit\">1000<\/span> words. You've used <span id=\"short-desc-limit-used\">0<\/span> words so far.\r\n<div class=\"progress\">\r\n  <div class=\"progress-bar\" role=\"progressbar\" aria-valuenow=\"0\" aria-valuemin=\"0\" aria-valuemax=\"100\" id=\"short-desc-bar\"><\/div>\r\n<\/div>",
-            "required": 0,
-            "conditional_logic": 0,
+            "type": "text",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
             "wrapper": {
                 "width": "",
                 "class": "",
                 "id": ""
             },
+            "0": false,
             "default_value": "",
-            "placeholder": "",
             "maxlength": "",
-            "rows": "",
-            "new_lines": "wpautop"
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         },
         {
             "key": "field_627fc0a587c0a",
@@ -230,56 +231,21 @@
             "key": "field_5ee4c5e688b33",
             "label": "Dates",
             "name": "dates",
-            "type": "repeater",
-            "instructions": "Please include multiple dates for multiple course offerings.\r\n\r\nThis information is required for ALN so we can help market your course.",
-            "required": 0,
-            "conditional_logic": 0,
+            "type": "text",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
             "wrapper": {
                 "width": "",
                 "class": "",
                 "id": ""
             },
-            "collapsed": "",
-            "min": 0,
-            "max": 0,
-            "layout": "table",
-            "button_label": "Add course offering dates",
-            "sub_fields": [
-                {
-                    "key": "field_5ee4c691b9482",
-                    "label": "Course Start Date",
-                    "name": "course_start_date",
-                    "type": "date_picker",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "50",
-                        "class": "",
-                        "id": ""
-                    },
-                    "display_format": "d\/m\/Y",
-                    "return_format": "d\/m\/Y",
-                    "first_day": 0
-                },
-                {
-                    "key": "field_5ee4c6acb9484",
-                    "label": "Course End Date",
-                    "name": "course_end_date",
-                    "type": "date_picker",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "50",
-                        "class": "",
-                        "id": ""
-                    },
-                    "display_format": "d\/m\/Y",
-                    "return_format": "d\/m\/Y",
-                    "first_day": 0
-                }
-            ]
+            "0": false,
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         },
         {
             "key": "field_628f6f38cabc2",
@@ -504,18 +470,21 @@
             "key": "field_5ee60564f6d2c",
             "label": "Review",
             "name": "",
-            "type": "message",
+            "type": "text",
             "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
+            "required": false,
+            "conditional_logic": false,
             "wrapper": {
                 "width": "",
                 "class": "",
                 "id": ""
             },
-            "message": "You have now completed your course submission. \r\n\r\nWhen you click on the 'Create new course' button below you'll be taken to the course page. That will give you the chance to see the submission as others will see it. This is the page where you can make updates or edit information should that be necessary.",
-            "new_lines": "wpautop",
-            "esc_html": 0
+            "0": false,
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -543,11 +512,12 @@
         "format",
         "page_attributes",
         "featured_image",
+        "categories",
         "tags",
         "send-trackbacks"
     ],
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1653910841
+    "modified": 1654083697
 }
