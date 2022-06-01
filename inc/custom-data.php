@@ -78,13 +78,13 @@ add_action( 'init', 'create_course_cpt', 0 );
 // Post Type Key: organization
 function create_organization_cpt() {
 $labels = array(
-    'name' => __( 'organization', 'Post Type General Name', 'textdomain' ),
-    'singular_name' => __( 'organization', 'Post Type Singular Name', 'textdomain' ),
-    'menu_name' => __( 'organization', 'textdomain' ),
-    'name_admin_bar' => __( 'organization', 'textdomain' ),
-    'archives' => __( 'organization Archives', 'textdomain' ),
-    'attributes' => __( 'organization Attributes', 'textdomain' ),
-    'parent_item_colon' => __( 'organization:', 'textdomain' ),
+    'name' => __( 'Organization', 'Post Type General Name', 'textdomain' ),
+    'singular_name' => __( 'Organization', 'Post Type Singular Name', 'textdomain' ),
+    'menu_name' => __( 'Organization', 'textdomain' ),
+    'name_admin_bar' => __( 'Organization', 'textdomain' ),
+    'archives' => __( 'Organization Archives', 'textdomain' ),
+    'attributes' => __( 'Organization Attributes', 'textdomain' ),
+    'parent_item_colon' => __( 'Organization:', 'textdomain' ),
     'all_items' => __( 'All organizations', 'textdomain' ),
     'add_new_item' => __( 'Add New organization', 'textdomain' ),
     'add_new' => __( 'Add New', 'textdomain' ),
@@ -102,12 +102,12 @@ $labels = array(
     'use_featured_image' => __( 'Use as featured image', 'textdomain' ),
     'insert_into_item' => __( 'Insert into organization', 'textdomain' ),
     'uploaded_to_this_item' => __( 'Uploaded to this organization', 'textdomain' ),
-    'items_list' => __( 'organization list', 'textdomain' ),
-    'items_list_navigation' => __( 'organization list navigation', 'textdomain' ),
+    'items_list' => __( 'Organization list', 'textdomain' ),
+    'items_list_navigation' => __( 'Organization list navigation', 'textdomain' ),
     'filter_items_list' => __( 'Filter organization list', 'textdomain' ),
   );
   $args = array(
-    'label' => __( 'organization', 'textdomain' ),
+    'label' => __( 'Organization', 'textdomain' ),
     'description' => __( '', 'textdomain' ),
     'labels' => $labels,
     'menu_icon' => '',
@@ -213,7 +213,7 @@ function create_organization_taxonomies()
 {
   // Add new taxonomy
   $labels = array(
-    'name' => _x( 'organization', 'taxonomy general name' ),
+    'name' => _x( 'Organization', 'taxonomy general name' ),
     'singular_name' => _x( 'organization', 'taxonomy singular name' ),
     'search_items' =>  __( 'Search organizations' ),
     'popular_items' => __( 'Popular organizations' ),
