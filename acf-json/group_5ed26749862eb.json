@@ -100,7 +100,7 @@
             },
             "taxonomy": "delivery",
             "field_type": "checkbox",
-            "add_term": 1,
+            "add_term": 0,
             "save_terms": 1,
             "load_terms": 1,
             "return_format": "id",
@@ -519,5 +519,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1654083697
+    "modified": 1654281766
 }

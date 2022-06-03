@@ -85,15 +85,15 @@ $labels = array(
     'archives' => __( 'Organization Archives', 'textdomain' ),
     'attributes' => __( 'Organization Attributes', 'textdomain' ),
     'parent_item_colon' => __( 'Organization:', 'textdomain' ),
-    'all_items' => __( 'All organizations', 'textdomain' ),
+    'all_items' => __( 'All Organizations', 'textdomain' ),
     'add_new_item' => __( 'Add New organization', 'textdomain' ),
     'add_new' => __( 'Add New', 'textdomain' ),
-    'new_item' => __( 'New organization', 'textdomain' ),
-    'edit_item' => __( 'Edit organization', 'textdomain' ),
-    'update_item' => __( 'Update organization', 'textdomain' ),
-    'view_item' => __( 'View organization', 'textdomain' ),
-    'view_items' => __( 'View organizations', 'textdomain' ),
-    'search_items' => __( 'Search organizations', 'textdomain' ),
+    'new_item' => __( 'New Organization', 'textdomain' ),
+    'edit_item' => __( 'Edit Organization', 'textdomain' ),
+    'update_item' => __( 'Update Organization', 'textdomain' ),
+    'view_item' => __( 'View Organization', 'textdomain' ),
+    'view_items' => __( 'View Organizations', 'textdomain' ),
+    'search_items' => __( 'Search Organizations', 'textdomain' ),
     'not_found' => __( 'Not found', 'textdomain' ),
     'not_found_in_trash' => __( 'Not found in Trash', 'textdomain' ),
     'featured_image' => __( 'Featured Image', 'textdomain' ),
@@ -205,7 +205,7 @@ add_action( 'init', 'create_program_cpt', 0 );
 
 
 /*
-CUSTOM TAXONOMY LAND
+CUSTOM TAXONOMY LAND********************************************
 */
 
 add_action( 'init', 'create_organization_taxonomies', 0 );
@@ -230,10 +230,10 @@ function create_organization_taxonomies()
   );
 
 //registers taxonomy specific post types - default is just post
-  register_taxonomy('organizations',array('post','course','instructor'), array(
+  register_taxonomy('organizations',array('course','instructor'), array(
     'hierarchical'          => true,
     'labels'                => $labels,
-    'show_ui'               => true,
+    'show_ui'               => false,
     'update_count_callback' => '_update_post_term_count',
     'query_var'             => true,
     'rewrite'               => array( 'slug' => 'organization' ),
@@ -279,7 +279,7 @@ function create_province_taxonomies()
     'show_in_rest'          => true,
     'rest_base'             => 'province',
     'rest_controller_class' => 'WP_REST_Terms_Controller',
-    'show_in_nav_menus' => true,    
+    'show_in_nav_menus' => false,    
   ));
 }
 
@@ -315,7 +315,7 @@ function create_theme_taxonomies()
     'show_in_rest'          => true,
     'rest_base'             => 'theme',
     'rest_controller_class' => 'WP_REST_Terms_Controller',
-    'show_in_nav_menus' => true,    
+    'show_in_nav_menus' => false,    
   ));
 }
 
@@ -351,7 +351,7 @@ function create_trade_taxonomies()
     'show_in_rest'          => true,
     'rest_base'             => 'trade',
     'rest_controller_class' => 'WP_REST_Terms_Controller',
-    'show_in_nav_menus' => true,    
+    'show_in_nav_menus' => false,    
   ));
 }
 
@@ -388,7 +388,7 @@ function create_delivery_taxonomies()
     'show_in_rest'          => true,
     'rest_base'             => 'delivery',
     'rest_controller_class' => 'WP_REST_Terms_Controller',
-    'show_in_nav_menus' => true,    
+    'show_in_nav_menus' => false,    
   ));
 }
 
@@ -398,7 +398,7 @@ function create_program_taxonomies()
   // Add new taxonomy, NOT hierarchical (like tags)
   $labels = array(
     'name' => _x( 'Programs', 'taxonomy general name' ),
-    'singular_name' => _x( 'program', 'taxonomy singular name' ),
+    'singular_name' => _x( 'Program', 'taxonomy singular name' ),
     'search_items' =>  __( 'Search Programs' ),
     'popular_items' => __( 'Popular Programs' ),
     'all_items' => __( 'All Programs' ),
@@ -410,7 +410,7 @@ function create_program_taxonomies()
     'new_item_name' => __( 'New program' ),
     'add_or_remove_items' => __( 'Add or remove Programs' ),
     'choose_from_most_used' => __( 'Choose from the most used Programs' ),
-    'menu_name' => __( 'program' ),
+    'menu_name' => __( 'Program' ),
   );
 
 //registers taxonomy specific post types - default is just post
