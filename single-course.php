@@ -67,40 +67,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 									  </thead>
 									  <tbody>
 			
-					<?php if( have_rows('dates') ): ?>
-						
-							<?php while( have_rows('dates') ): the_row(); 
-								
-								if(get_sub_field('course_start_date')){
-									$course_start = get_sub_field('course_start_date');									
-								} else {
-									$course_start = 'Not Entered';
-								}
-								if(get_sub_field('course_end_date')){
-									$course_end = get_sub_field('course_end_date');
-								} else {
-									$course_end = 'Not entered';
-								}
-								
-								?>
-								
-									    <tr>									  
-									    
-										<?php if( $course_start ): ?>
-											<?php echo '<td>' . $course_start . '</td>' ; ?>
-										<?php endif; ?>
-									    <?php if( $course_end ): ?>
-											<?php echo '<td>' . $course_end . '</td>' ; ?>
-										<?php endif; ?>
-										
-									    </tr>									 
-										
-
-							<?php endwhile; ?>
-							<?php else: ?>
-							<p>You have not indicated any dates. Dates are key to marketing your course.</p>
-							
-						<?php endif; ?>
+							<?php echo ca_course_dates();?>
 						 		</tbody>
 							</table>
 						</div>

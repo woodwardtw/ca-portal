@@ -231,21 +231,56 @@
             "key": "field_5ee4c5e688b33",
             "label": "Dates",
             "name": "dates",
-            "type": "text",
+            "type": "repeater",
             "instructions": "",
-            "required": false,
-            "conditional_logic": false,
+            "required": 0,
+            "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
                 "id": ""
             },
-            "0": false,
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_629b58a669e0d",
+                    "label": "Start Date",
+                    "name": "start_date",
+                    "type": "date_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "display_format": "d-m-Y",
+                    "return_format": "d-m-Y",
+                    "first_day": 1
+                },
+                {
+                    "key": "field_629b58d769e0e",
+                    "label": "End Date",
+                    "name": "end_date",
+                    "type": "date_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "display_format": "d-m-Y",
+                    "return_format": "d-m-Y",
+                    "first_day": 1
+                }
+            ]
         },
         {
             "key": "field_628f6f38cabc2",
@@ -519,5 +554,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1654281766
+    "modified": 1654349078
 }

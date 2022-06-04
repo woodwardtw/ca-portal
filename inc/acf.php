@@ -52,22 +52,22 @@ function aln_registration_link(){
 }
 
 function aln_registration_contact(){
-    $title = get_the_title();
-    $name = 'N/A';
-    $phone = 'N/A';
-    $email = 'N/A';
-     if (get_field('')["course_contact_name"] != null || get_field('')["course_contact_email"]){
-        if (get_field('')["course_contact_name"]){
-            $name = get_field('')["course_contact_name"];
-        }
-        if (get_field('')["course_contact_email"]){
-            $email = get_field('')["course_contact_email"];
-        } 
-        if (get_field('')["course_contact_phone"]){            
-         $phone = get_field('')["course_contact_phone"];
-        }
-        return "Name: {$name}<br>Phone: {$phone}<br>Email: <a href='mailto:{$email}?subject={$title} Course Inquiry'>{$email}</a>";
-     }
+    // $title = get_the_title();
+    // $name = 'N/A';
+    // $phone = 'N/A';
+    // $email = 'N/A';
+    //  if (get_field('')){
+    //     if (get_field('')["course_contact_name"]){
+    //         $name = get_field('')["course_contact_name"];
+    //     }
+    //     if (get_field('')["course_contact_email"]){
+    //         $email = get_field('')["course_contact_email"];
+    //     } 
+    //     if (get_field('')["course_contact_phone"]){            
+    //      $phone = get_field('')["course_contact_phone"];
+    //     }
+    //     return "Name: {$name}<br>Phone: {$phone}<br>Email: <a href='mailto:{$email}?subject={$title} Course Inquiry'>{$email}</a>";
+    //  }
 }
 
 function aln_short_course_description(){
@@ -119,6 +119,36 @@ function aln_instructor_bio(){
     } else {
         return 'Please enter an instructor biography. Understanding who is teaching a course is a key element in marketing the course.';
     }
+}
+
+
+function ca_course_dates(){
+    if( have_rows('dates') ):
+        $html = '';
+        // Loop through rows.
+        while( have_rows('dates') ) : the_row();
+            $start = "not entered";
+            $end = "not entered";
+            // Load sub field value.
+            $start = get_sub_field('start_date');
+            $end = get_sub_field('end_date');
+            $today =  date("d-m-Y");
+            // Do something...
+            if($start > $today){
+                 $html .= "
+                        <tr>
+                            <td>{$start}</td>
+                            <td>{$end}</td>
+                        </tr>
+                        ";
+            }
+        // End loop.                   
+        endwhile;
+        return $html;
+        // No value.
+        else :
+            // Do something...
+        endif;
 }
 
 
