@@ -25,6 +25,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<?php echo do_shortcode('[facetwp facet="program"]');?>
 				<h2>Format</h2>
 				<?php echo do_shortcode('[facetwp facet="delivery"]');?>
+				<h2>Location</h2>
+				<?php echo do_shortcode('[facetwp facet="location"]');?>
 			</div>
 
 			<div class="col-md-8 content-area" id="primary">
