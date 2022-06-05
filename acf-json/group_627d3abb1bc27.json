@@ -23,9 +23,9 @@
         },
         {
             "key": "field_627d3adaa1115",
-            "label": "Program Type",
-            "name": "program_type",
-            "type": "text",
+            "label": "Delivery Type",
+            "name": "delivery_type",
+            "type": "taxonomy",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -34,16 +34,19 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "taxonomy": "delivery",
+            "field_type": "checkbox",
+            "add_term": 0,
+            "save_terms": 1,
+            "load_terms": 1,
+            "return_format": "id",
+            "multiple": 0,
+            "allow_null": 0
         },
         {
             "key": "field_627d3ae328006",
-            "label": "Institution",
-            "name": "institution",
+            "label": "Organization",
+            "name": "organization",
             "type": "relationship",
             "instructions": "",
             "required": 0,
@@ -54,7 +57,7 @@
                 "id": ""
             },
             "post_type": [
-                "university"
+                "organization"
             ],
             "taxonomy": "",
             "filters": [
@@ -149,5 +152,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 1,
-    "modified": 1652374559
+    "modified": 1654430916
 }

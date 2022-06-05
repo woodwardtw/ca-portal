@@ -21,8 +21,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="row">
 
 			<div class="col-md-4">
-				<h2>Program</h2>
-				<?php echo do_shortcode('[facetwp facet="program"]');?>
 				<h2>Format</h2>
 				<?php echo do_shortcode('[facetwp facet="delivery"]');?>
 			</div>

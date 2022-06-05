@@ -381,14 +381,14 @@ function create_delivery_taxonomies()
   register_taxonomy('delivery',array('program','course'), array(
     'hierarchical' => true,
     'labels' => $labels,
-    'show_ui' => false,
+    'show_ui' => true,
     'update_count_callback' => '_update_post_term_count',
     'query_var' => true,
     'rewrite' => array( 'slug' => 'delivery' ),
     'show_in_rest'          => true,
     'rest_base'             => 'delivery',
     'rest_controller_class' => 'WP_REST_Terms_Controller',
-    'show_in_nav_menus' => false,    
+    'show_in_nav_menus' => true,    
   ));
 }
 
