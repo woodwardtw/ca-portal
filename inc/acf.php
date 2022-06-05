@@ -127,7 +127,6 @@ function ca_course_dates(){
         $html = '';
         // Loop through rows.
         while( have_rows('dates') ) : the_row();
-            $start = "not entered";
             $end = "not entered";
             // Load sub field value.
             $start = get_sub_field('start_date');
@@ -144,10 +143,16 @@ function ca_course_dates(){
             }
         // End loop.                   
         endwhile;
-        return $html;
+        if($html === ''){
+            return "<tr><td>Not offered currently</td><td></td></tr>";
+        }
+        else {
+            return $html;
+        }
         // No value.
         else :
             // Do something...
+            return "<tr><td>Not offered currently</td><td></td></tr>";
         endif;
 }
 
