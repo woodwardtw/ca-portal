@@ -3,6 +3,22 @@
     "title": "Program",
     "fields": [
         {
+            "key": "field_62a271fa38144",
+            "label": "Website",
+            "name": "website",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
             "key": "field_627d3ac43e8f9",
             "label": "Description",
             "name": "description",
@@ -23,8 +39,8 @@
         },
         {
             "key": "field_627d3adaa1115",
-            "label": "Delivery Type",
-            "name": "delivery_type",
+            "label": "Delivery Method",
+            "name": "delivery_method",
             "type": "taxonomy",
             "instructions": "",
             "required": 0,
@@ -108,6 +124,194 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
+        },
+        {
+            "key": "field_62a2721738145",
+            "label": "Program Type",
+            "name": "program_type",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "College": "College",
+                "Undergraduate": "Undergraduate",
+                "Graduate": "Graduate",
+                "Microcredential": "Microcredential",
+                "Certificate": "Certificate"
+            },
+            "allow_custom": 1,
+            "save_custom": 0,
+            "default_value": [],
+            "layout": "vertical",
+            "toggle": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_62a2737308131",
+            "label": "Program Start Date",
+            "name": "program_start_date",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_62a2738408132",
+                    "label": "Start Semester",
+                    "name": "start_semester",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Spring": "Spring",
+                        "Summer": "Summer",
+                        "Fall": "Fall"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "",
+                    "layout": "vertical",
+                    "return_format": "value",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_62a273c908133",
+                    "label": "Start Year",
+                    "name": "start_year",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "2022": "2022",
+                        "2023": "2023",
+                        "2024": "2024",
+                        "2025": "2025",
+                        "2026": "2026",
+                        "2027": "2027"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "",
+                    "layout": "vertical",
+                    "return_format": "value",
+                    "save_other_choice": 0
+                }
+            ]
+        },
+        {
+            "key": "field_62a273ff62c23",
+            "label": "Program Contact",
+            "name": "program_contact",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "visual",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_62a2747ca087d",
+            "label": "Prerequisites Required",
+            "name": "prerequisites_required",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Yes": "Yes",
+                "No": "No"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_62a275104516b",
+            "label": "Theme",
+            "name": "theme",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "theme",
+            "field_type": "checkbox",
+            "add_term": 0,
+            "save_terms": 1,
+            "load_terms": 1,
+            "return_format": "id",
+            "multiple": 0,
+            "allow_null": 0
+        },
+        {
+            "key": "field_62a2753f06a23",
+            "label": "Professions",
+            "name": "professions",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "trades",
+            "field_type": "checkbox",
+            "add_term": 0,
+            "save_terms": 1,
+            "load_terms": 1,
+            "return_format": "id",
+            "multiple": 0,
+            "allow_null": 0
         }
     ],
     "location": [
@@ -142,5 +346,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 1,
-    "modified": 1654431625
+    "modified": 1654814057
 }
