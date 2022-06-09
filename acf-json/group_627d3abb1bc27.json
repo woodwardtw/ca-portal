@@ -241,7 +241,7 @@
             },
             "default_value": "",
             "tabs": "visual",
-            "toolbar": "full",
+            "toolbar": "basic",
             "media_upload": 0,
             "delay": 0
         },
@@ -262,7 +262,7 @@
                 "Yes": "Yes",
                 "No": "No"
             },
-            "allow_null": 0,
+            "allow_null": 1,
             "other_choice": 0,
             "default_value": "",
             "layout": "vertical",
@@ -346,5 +346,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 1,
-    "modified": 1654814057
+    "modified": 1654814216
 }
