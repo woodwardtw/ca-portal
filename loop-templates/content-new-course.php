@@ -31,7 +31,7 @@ defined( 'ABSPATH' ) || exit;
 			        'post_type'     => 'course',
 		            'post_status'   => 'publish',
 			        ),
-		        'field_groups' => array(6,22), // Create post field group ID(s)
+		        //'field_groups' => array(6,22), // Create post field group ID(s)
 	            'form' => true,
 	            'return' => '%post_url%' , // Redirect to new post url         
 		        'submit_value'  => 'Add new course'
