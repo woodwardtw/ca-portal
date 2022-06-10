@@ -230,7 +230,7 @@ function create_organization_taxonomies()
   );
 
 //registers taxonomy specific post types - default is just post
-  register_taxonomy('organizations',array('course','instructor'), array(
+  register_taxonomy('organizations',array('course','program'), array(
     'hierarchical'          => true,
     'labels'                => $labels,
     'show_ui'               => false,
@@ -240,7 +240,7 @@ function create_organization_taxonomies()
     'show_in_rest'          => true,
     'rest_base'             => 'organizations',
     'rest_controller_class' => 'WP_REST_Terms_Controller',
-    'show_in_nav_menus'     => true, 
+    'show_in_nav_menus'     => false, 
     'meta_box_cb'           => false,   
   ));
 }
