@@ -212,7 +212,7 @@
         },
         {
             "key": "field_628f6f10cabc1",
-            "label": "PSI registration page link",
+            "label": "Registration Link",
             "name": "psi_registration_page_link",
             "type": "url",
             "instructions": "",
@@ -283,7 +283,7 @@
         },
         {
             "key": "field_628f6f38cabc2",
-            "label": "Learner Engagement Hours",
+            "label": "Course Hours",
             "name": "learner_engagement_hours",
             "type": "number",
             "instructions": "Indicate hours of engagement expected over the duration of the course.",
@@ -553,5 +553,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1654784845
+    "modified": 1654887332
 }
