@@ -157,6 +157,44 @@ function ca_course_dates(){
 }
 
 
+
+//PROGRAMS
+
+function ca_portal_courses(){
+    global $post;
+    $course_slug = $post->post_name;
+    $html = '';
+    // WP QUERY LOOP
+    
+     $args = array(
+          'posts_per_page' => 20,
+          'post_type'   => 'course', 
+          'post_status' => 'publish', 
+          'nopaging' => false,
+          'tax_query' => array(             
+            array(
+              'taxonomy' => 'programs', // (string) - Taxonomy.
+              'field' => 'slug', // (string) - Select taxonomy term by Possible values are 'term_id', 'name', 'slug' or 'term_taxonomy_id'. Default value is 'term_id'.
+              'terms' => array( $course_slug), // (int/string/array) - Taxonomy term(s).
+              'operator' => 'IN' // (string) - Operator to test. Possible values are 'IN', 'NOT IN', 'AND', 'EXISTS' and 'NOT EXISTS'. Default value is 'IN'.
+                )
+            ),
+        );
+            $the_query = new WP_Query( $args );
+                        if( $the_query->have_posts() ): 
+                          while ( $the_query->have_posts() ) : $the_query->the_post();
+                           //DO YOUR THING
+                            $title = get_the_title();
+                            $link = get_the_permalink();
+                            $html .= "<a href='{$link}'>$title</a><br>"; 
+                             endwhile;
+                      endif;
+                wp_reset_query();  // Restore global post data stomped by the_post().
+       return $html;                   
+    
+}
+
+
 //ACF SAVE and LOAD JSON
 add_filter('acf/settings/save_json', 'alt_ee_json_save_point');
  
