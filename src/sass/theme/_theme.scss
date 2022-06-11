@@ -238,11 +238,12 @@ h1, h2, h3, h4, h5 {
 }
 
 //buttons
-.btn, .acf-button, .acf-form-submit input {
+.btn, .acf-button, .acf-form-submit input, .learn-more {
 	border-radius: 30px;
 	padding: 12px 25px;
 	border-style: none;
 }
+
 
 .acf-button {
 	margin: 10px 0;
@@ -255,6 +256,28 @@ h1, h2, h3, h4, h5 {
 	height: 50px;
 	margin-bottom: 20px;
 }
+
+//single programs
+
+.courses {
+	margin-top: 50px;
+}
+
+.learn-more {
+	margin: 25px 0;
+}
+
+//facet cards
+.facetwp-template .card {
+	border-radius: 0;
+	margin: 20px 0;
+}
+
+.facetwp-template a {
+	font-size: 1.3rem;
+	font-weight: 700;
+}
+
 
 //footer
 #wrapper-footer {

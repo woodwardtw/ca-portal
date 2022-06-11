@@ -18757,7 +18757,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   border-radius: 50%;
 }
 
-.btn, .wpcf7 input[type=submit], .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-info a.button, .acf-button, .acf-form-submit input {
+.btn, .wpcf7 input[type=submit], .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-info a.button, .acf-button, .acf-form-submit input, .learn-more {
   border-radius: 30px;
   padding: 12px 25px;
   border-style: none;
@@ -18771,6 +18771,24 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 .widget-area input {
   height: 50px;
   margin-bottom: 20px;
+}
+
+.courses {
+  margin-top: 50px;
+}
+
+.learn-more {
+  margin: 25px 0;
+}
+
+.facetwp-template .card {
+  border-radius: 0;
+  margin: 20px 0;
+}
+
+.facetwp-template a {
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 
 #wrapper-footer {

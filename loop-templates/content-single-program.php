@@ -27,7 +27,7 @@ defined( 'ABSPATH' ) || exit;
 		<?php 
 		if(get_field('website')){
 			$url = the_field('url');
-			echo "<a class='learn-more' href='{$url}'>Learn more</a>";
+			echo "<a class='learn-more btn btn-dark' href='{$url}'>Learn more</a>";
 		}
 		?>
 
