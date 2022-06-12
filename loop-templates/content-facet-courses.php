@@ -24,8 +24,8 @@ defined( 'ABSPATH' ) || exit;
 
 		<?php the_content(); ?>
 		<div class="col-md-12">
-			<div class="row"><div class="col-md-12 facet-sort-box"><?php echo facetwp_display( 'sort' );?>
-				
+			<div class="row"><div class="col-md-12 facet-sort-box">
+				<?php echo facetwp_display('facet', 'course_sort' );?>
 			</div>
 		</div>
 			<?php echo facetwp_display( 'template', 'courses' );?>	
